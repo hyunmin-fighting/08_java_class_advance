@@ -1,4 +1,4 @@
-package step8_01.atm_v1;
+	package step8_01.atm_v1;
 
 public class Account {
 	//계좌번호는 유일, 돈도 유일

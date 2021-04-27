@@ -50,17 +50,17 @@ public class ATM {
 	}
 	
 	
-	void logout() {
-		
-		if (identifier == -1) {
-			System.out.println("[메시지] 로그인을 하신 후 이용하실 수 있습니다.");
+		void logout() {
+			
+			if (identifier == -1) {
+				System.out.println("[메시지] 로그인을 하신 후 이용하실 수 있습니다.");
+			}
+			else {
+				identifier = -1;
+				System.out.println("[메시지] 로그아웃 되었습니다.");
+			}
+			
 		}
-		else {
-			identifier = -1;
-			System.out.println("[메시지] 로그아웃 되었습니다.");
-		}
-		
-	}
 	
 	
 	void leave() {
@@ -92,6 +92,10 @@ public class ATM {
 				}
 				else { 				//user클래스를 ID검색인덱스값(identifier)로 검색하여 해당accCount가 0이 아니면
 					Account[] temp = userManager.getUser(identifier).acc; //검색된 user클래스 계정클래스배열을 temp에 복사 
+//					Account[] temp2 = userManager.user[identifier].acc;
+//					System.out.println("temp : " + temp);
+//					System.out.println("temp : " + temp2);
+
 					int tempAccCount = userManager.getUser(identifier).accCount; //검색된 user클래스 계정수값을 tempAccCount에 복사 
 					userManager.user[identifier].acc = new Account[tempAccCount+1]; // 계정클래스배열을 크기 1늘려 새로 생성
 					for (int i = 0; i < tempAccCount; i++) {	// 현재까지의 계정클래스의 배열크기만큼 for문을 돌리고

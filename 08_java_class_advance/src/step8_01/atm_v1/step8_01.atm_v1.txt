@@ -1,0 +1,74 @@
+Main Class 
+ 1) 변수 : 없음
+ 
+ 2) 클래스
+  -> ATM Class의 인스턴스 생성
+
+  3) 메서드 없음
+
+
+ATM Class
+ 1) 변수
+  -> (인덱스 식별자) int identifier;
+
+ 2) 클래스
+  -> Scanner Class 인스턴스 생성
+  -> Random Class 인스턴스 생성
+  -> UserManager Class 인스턴스 생성 
+
+3) 메서드
+  -> (메뉴출력) void printMainMenu();	
+  -> (로그인) void login();				   <--- priintAccountMenu() 메서드 호출 
+  -> (회원가입) void join();
+  -> (로그아웃) void logout();
+  -> (회원탈퇴) void leave();
+  -> (계좌관리) void printAccountMenu();
+
+UserManager Class
+ 1) 변수
+  -> (User클래스 배열)User[ ] user;
+  -> (고객수)int userCount;
+
+ 2) 클래스
+  -> Scanner Class 인스턴스 생성
+
+ 3) 메서드
+  -> (고객정보출력) void printAllUser();	
+  -> (고객추가) void addUser();
+  -> (고객정보얻기) void getUser();
+  -> (로그인) void logUser();    		      
+  -> (탈퇴) void leave();
+  -> (계좌관리) void printAccountMenu();
+  
+
+User Class
+ 1) 변수
+  -> (고객이름)String id;
+  -> (계좌수)int accCount;
+  -> (Account클래스 배열)Account[ ] acc;
+
+ 2) 클래스
+  ->  인스턴스 생성 없음
+
+ 3) 메서드
+  -> (계좌배열출력) void printAccount
+
+
+Account Class
+ 1) 변수
+  -> (계좌번호)String number;
+  -> (금액)int money;
+
+ 2) 클래스
+  ->  인스턴스 생성 없음
+
+ 3) 메서드
+  -> (계좌출력) void printOwnAccount
+
+
+
+
+
+
+
+
