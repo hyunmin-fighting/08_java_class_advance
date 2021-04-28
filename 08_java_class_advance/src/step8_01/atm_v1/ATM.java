@@ -115,7 +115,7 @@ public class ATM {
 					continue;											//밑에 내용들 스킵
 				}
 				
-				if ( userManager.user[identifier].accCount == 1) {
+				else if ( userManager.user[identifier].accCount == 1) {
 					System.out.println("[메시지] 계좌번호 :'"+ userManager.user[identifier].acc[0].number+"' 삭제 되었습니다.\n");
 					userManager.user[identifier].acc = null;
 				}
