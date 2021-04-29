@@ -83,7 +83,16 @@ public class ATM_Question3 {
 			System.out.print("[1.계좌생성] [2.계좌삭제] [3.조회] [0.로그아웃] : ");
 			int sel = scan.nextInt();
 			
-			if 		(sel == 1) {}
+			if 		(sel == 1) {
+				System.out.print("[메시지] 계좌번호를 입력하세요");
+				
+				if(userManager.user[identifier].accCount == 0) {
+					Account[] tempAccount = userManager.user[identifier].acc;
+					
+					
+						
+				}
+			}
 			else if (sel == 2) {}
 			else if (sel == 3) {}
 			else if (sel == 0) {} 	
