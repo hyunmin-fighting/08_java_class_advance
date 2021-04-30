@@ -65,7 +65,6 @@ public class FileManager {
 		}finally {
 			if(fw != null) {try {fw.close();} catch (IOException e) {}}
 		}
-		
 	}
 	
 	

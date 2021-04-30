@@ -19,7 +19,7 @@ public class UserManager {
 	int userCnt = 0;					// 전체 회원 수
 	
 	void printAllUser() {
-		
+		// 고객들의 계좌정보를 출력
 		for (int i=0; i<userCnt; i++) {
 			System.out.print((i+1) + ".ID(" + userList[i].id + ")\tPW(" + userList[i].pw + ")\t");
 			if (userList[i].accCnt != 0) {
@@ -33,7 +33,7 @@ public class UserManager {
 	
 	
 	boolean getCheckAcc(String account) {
-		
+		//입력받은 계좌번호가 기존 고객들의 계좌번호에 중복되있는지 체크
 		boolean isDuple = false;
 		for (int i=0; i<userCnt; i++) {
 			for (int j=0; j<userList[i].accCnt; j++) {
@@ -48,7 +48,7 @@ public class UserManager {
 	
 	
 	int logUser() {
-		
+		//입력받은ID값과 PW값을 고객list 정보에서 검색하고 검색이 되면 해당 인덱스를 identifier 복사
 		int identifier = -1;
 		
 		System.out.print("[로그인]아이디를 입력하세요 : ");
@@ -68,7 +68,7 @@ public class UserManager {
 	
 	
 	boolean checkId(String id) {
-		
+		//입력받은 id값이 기존 고객의 id와 중복인지 검사
 		boolean isDuple = false;
 		for (int i=0; i<userCnt; i++) {
 			if (userList[i].id.equals(id)) {
@@ -81,7 +81,7 @@ public class UserManager {
 	
 	
 	void joinMember() {
-		
+		// 입력받은 id 중복 검사 후 중복이 없으면 고객List에 id/pw 추가 
 		System.out.print("[회원가입]아이디를 입력하세요 : ");
 		String id = scan.next();
 		System.out.print("[회원가입]패스워드를 입력하세요 : ");
@@ -120,7 +120,7 @@ public class UserManager {
 
 	
 	int deleteMember(int identifier) {
-		
+		// 입력받은 로그인 인덱스를 고객List에서 삭제
 		User[] tmp = userList;
 		userList = new User[userCnt - 1];
 		
