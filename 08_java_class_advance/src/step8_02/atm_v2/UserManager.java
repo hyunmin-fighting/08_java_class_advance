@@ -56,14 +56,13 @@ public class UserManager {
 		System.out.print("[로그인]패스워드를 입력하세요 : ");
 		String pw = scan.next();
 		
+
 		for (int i=0; i<UserManager.instance.userCnt; i++) {
 			if (userList[i].id.equals(id) && userList[i].pw.equals(pw)) {
 				identifier = i;
 			}
 		}
-		
 		return identifier;
-
 	}
 	
 	
@@ -76,7 +75,6 @@ public class UserManager {
 			}
 		}
 		return isDuple;
-		
 	}
 	
 	

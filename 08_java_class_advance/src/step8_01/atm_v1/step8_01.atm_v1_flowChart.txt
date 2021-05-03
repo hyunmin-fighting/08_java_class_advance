@@ -1,0 +1,30 @@
+										<Main클래스> => ATM 클래스 인스턴스 생성 => UserManager 클래스 인스턴스 생성
+										
+										↓
+
+										atm.printMainMenu()[메인선택메뉴출력] => **while루프** 
+	
+
+				↓(Sel==1)					↓(Sel==2)				↓(Sel==3)				↓(Sel==4)				↓(Sel==0)				  		
+			                 	
+<ATM클래스>			login();[로그인]→→→→→→→				logout();[로그아웃]				join();[회원가입]				leave();[회원탈퇴]		 		END		→→	→→	→→	→→	→→	→→	→→	→→	→→	printAccountMenu(); => **while루프**						
+							↓			identifier = -1;														while루프종료				↓(if sel=1)				↓(else if sel=2)				↓(else if sel=3)				↓(else if sel=0)
+							↓																				↑			계좌생성					계좌삭제					계좌조회					logout();
+							↓																				↑																		this.while루프종료	
+		  	um.logUser();↓      ↑(identifier)	↓							um.addUser();↓	↑(X)				um.leave();↓    ↑(X)					↑	         um.getUser();↓    ↑user[index]			um.getUser();↓    ↑user[index]			um.user[identifier]↓    ↑(X)			
+							↓																				↑											
+							↓																				↑											
+<UserManager클래스>		logUser();			↓								addUser();					leave();						↑			getUser();				    getUser();		
+							↓																				↑											
+							↓								User 클래스 인스턴스 생성				User 클래스 인스턴스 생성				↑														       printAccount();
+<User클래스>						↓								=> new User();					=> new User();					↑											
+							↓																				↑						
+							↓																				↑											
+							↓																				↑						
+							↓																				↑											
+<Account클래스>						↓																				↑		Account 클래스 인스턴스 생성			Account 클래스 인스턴스 생성
+							↓																				↑		=> new Account();					=> new Account();
+							↓																				↑				
+							↓ if ( identifier != -1 ){}																		↑
+			               		 	→	→	→	→	→	→	→	→	→	→	→	→	→	→	→        →	→        →	→	→	→
+

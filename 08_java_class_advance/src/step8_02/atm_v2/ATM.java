@@ -53,6 +53,8 @@ public class ATM {
 			}
 			else if (selectMenu == 2) {
 				// 구현해보시오.
+				AccountManager.getInstance().deleteAcc(identifier);
+				FileManager.getInstance().save();
 			}
 			else if (selectMenu == 3) {
 				AccountManager.getInstance().printAcc(identifier);

@@ -1,0 +1,28 @@
+
+
+
+															class Main{}
+
+															class ATM{}
+	
+				void play() => while루프				void login()			↑→	→	→	→	→	void loginMenu() => while루프													void join()
+										↓	↑(identifier)		↑																					↓	
+		(sel==1)		(sel==2)		(sel==0)				um.logUser();			↑													um.joinMember();							UserManager싱글톤.
+		join()[회원가입]	login()[로그인]	while break			loginMenu();  	     → 	    →    →    	(sel==1)				(sel==2)				(sel==3)				(sel==4)				(sel==0)				joinMember();						
+		**ID검색				[종료]									계좌생성				계좌삭제				조     회				회원탈퇴				로그아웃
+		    													AccountManager싱글톤.		AccountManager싱글톤		AccountManager싱글톤.		um.deleteMember(identifier)		identifier=-1;
+															creatAcc(identifier);		deleteAcc(identifier);		printAcc(identifier);			break;				while break;
+															FileManager싱글톤.			FileManager싱글톤.		
+															save();				save();			
+				
+
+
+
+		class userManager{}				class AccountManager{}	
+		
+		printAllUser();					createAcc(int identifier);
+		getChechAcc(String account);			deleteAcc(int identifier);
+		logUser();						printAcc(int identifier);
+		checkId(String id);
+		joinMember();
+		deleteMember(int identifier);														
